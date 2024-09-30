@@ -111,7 +111,7 @@ input, button {
     display: flex;
     align-items: center;
     z-index: 1;
-    left: 2vw;
+    left: 3vw;
     height: 100%;
 }
 .navbar-search-btn {
@@ -119,7 +119,7 @@ input, button {
     display: flex;
     align-items: center;
     z-index: 1;
-    right: 2vw;
+    right: 3vw;
     height: 100%;
 }
 .menu,
