@@ -56,10 +56,11 @@
     align-items: center;
     z-index: 10;
     top: 0;
-    left: 3vw;
+    left: 2vw;
     height: 50px;
 }
 
 @media (max-width: 800px) {
     .menu-content {width: 100%;}
+    .mc-menu {left: 3vw;}
 }
