@@ -1,0 +1,65 @@
+
+/* ---< Меню >--- */
+
+.mc-header {
+    background: url(../img/header.jpg);
+    background-size: 100vw;
+}
+
+.menu-content {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--m-width);
+    
+    transition: all 1s ;
+    background: url(../img/background.jpg);
+    background-size: cover;
+}
+
+/* Ссылки внутри выпадающего списка */
+.menu-content a {
+    margin: 1rem;
+    padding: 1rem 2vw;
+    text-decoration: none;
+    display: block;
+    background: var(--color-blue-075);
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+}
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.menu-content a:hover {
+    background-color: var(--color-lblue-075);
+}
+.mc-text {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue-05);
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+}
+.mc-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    top: 0;
+    left: 2vw;
+    height: 50px;
+}
+
+@media (max-width: 800px) {
+    .menu-content {width: 100%;}
+}

@@ -1,0 +1,292 @@
+
+/* ------------< Header >------------ */
+
+.nav, .header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 6px var(--color-red) solid;
+    width: 100%;
+}
+.nav {
+    position: fixed;
+    transition: all 0.3s;
+}
+nav {position: absolute; z-index: 1;}
+
+/* ---------< Header nav >--------- */ /*#region*/
+
+/* ---< Блок навигации >--- */
+.navbar-collapse {
+    padding: 0.5rem;
+    display: flex;
+}
+
+/* ------< Навигация >------ */ /*#region*/
+
+/* ---< Блок кнопок навигации >--- */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+}
+/* ---< Кнопка навигации >--- */
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+/* ---< TXT >--- */
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 1.25rem;
+}
+/* ---< ICON >--- */
+.nav-icon {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+/*#endregion*/
+
+
+/* ------< Поиск >------ */ /*#region*/
+
+/* ---< Рамка >--- */
+.navbar-search {
+    width: 25vw;
+    background: var(--color-lblue-05);
+    border: 1px var(--color-white) solid;
+    border-radius: 0.25rem;
+}
+/* ---< Отступы> --- */
+.ns-wrapper {
+    height: 100%;
+    padding: 0 0.25rem;
+    display: flex;
+    align-items: center;
+}
+/* ---< Поле ввода >--- */
+.ns-form {
+    background: none;
+    height: 100%;
+    width: 100%;
+    padding-left: 0.25rem;
+}
+/* ---< TXT >--- */
+::-webkit-input-placeholder,
+input, button {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+/* ---< ICON / BTN >--- */
+.ns-icon {
+    margin: 0.5rem;
+}
+.ns-btn,
+.sc-btn,
+.menu-btn,
+.search-btn {
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#endregion*/
+
+
+/* ------< Меню / Поиск >------ */ /*#region*/
+
+.navbar-menu-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    left: 2vw;
+    height: 100%;
+}
+.navbar-search-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    right: 2vw;
+    height: 100%;
+}
+.menu,
+.search {
+    position: relative;
+}
+/* ---< ICON >--- */
+.menu-icon, .search-icon {
+    height: 2rem;
+    width: 2rem;
+}
+/*#endregion*/
+
+
+/*#endregion*/
+
+
+/* ---------< Header nav (Low resolution) >--------- */ /*#region*/
+
+/* ------< Top Header >------ */
+.navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+/* ---< Header Logo nav >--- */
+.navbar-logo {height: 2.5rem; width: 40vw;
+    text-align: center;}
+.navbar-logo-txt {
+    font-family: 'Inter';
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    text-decoration: none;
+    width: 100%;
+}
+
+/*#endregion*/
+
+
+/* ---------< Header logo >--------- */ /*#region*/
+
+/* ---< Блок кнопок навигации >--- */
+.hl-wrapper {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+/* ---< TXT >--- */ /*#region*/
+
+/* ---< Блок текста >--- */
+.hl-text {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* ---< Заголовок >--- */
+.hl-title {
+    font-family: 'Inter';
+    font-size: 10vw;
+    font-weight: 700;
+    color: var(--color-white);
+}
+/* ---< Подзаголовок  >--- */
+.hl-subtitle {
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-white);
+    width: 95%;
+}
+
+/*#endregion*/
+
+/* ---< Лого >--- */
+.hl-logo {
+    height: var(--hb-height);
+}
+.hl-logo-img {
+    height: 100%;
+}
+
+/*#endregion*/
+
+
+
+/* --- Ховеры --- */
+/* Иконки Навигации */
+.nav-link:hover .nav-icon,
+.ns-icon:hover,
+.menu-icon:hover,
+.search-icon:hover {
+    fill: var(--color-gray);
+}
+/* Текст навигации */
+.nav-link:hover, 
+.navbar-logo-txt:hover {
+    color: var(--color-gray);
+}
+
+
+/* ---------< АДАПТАЦИЯ ШАПКИ >--------- */
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 6vw;
+    }
+    /* --------------------------- */
+    .menu-icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    /* --------------------------- */
+    }
+    .nav-item {
+        padding: 0 0.5rem;
+    }
+    /* --------------------------- */
+    .hl-title {
+        font-size: 11vw;
+    }
+    .hl-subtitle {
+        font-size: 1rem;
+        width: 85%;
+    }
+}
+/* Изменение шапки при маленьких размерах экрана */
+@media (min-width: 801px) {
+    .header-d-block {display: block;}
+    .header-d-none {display: none;}
+}
+@media (max-width: 800px) {
+    .container {
+        padding: 0;
+    }
+    /* --------------------------- */
+    .navbar-menu {
+        position: static;
+    }
+    .menu-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+    /* --------------------------- */
+    .navbar-nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-item {
+        width: 25%;
+        padding: 0;
+    }
+    .nav-link {
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem 0;
+        margin: 0 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-icon {
+        margin: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

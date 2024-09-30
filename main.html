@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронная информационно-образовательная среда Уральского юридического института МВД России</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/logo.png">
+</head>
+
+<body>
+    <menu>
+        <div id="menu-content" class="menu-content menu-hide">
+            <div class="mc-header">
+                <div class="mc-menu">
+                    <div class="menu">
+                        <button onclick="functionMenu()" class="menu-btn">
+                            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mc-text">
+                    Меню
+                </div>
+            </div>
+            <div class="mc-items">
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+            </div>
+        </div>
+    </menu>
+    <search>
+        <div id="search-content" class="search-content search-show">
+            <div class="sc-header">
+                <div class="sc-text">
+                    Поиск
+                </div>
+                <div class="sc-menu">
+                    <div class="search">
+                        <button onclick="functionSearch()" class="search-btn">
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="sc-items">
+                <div class="sc-search">
+                    <form action="" class="sc-wrapper">
+                        <input type="text" placeholder="Поиск в ЭИОС" class="sc-form">
+                    </form>
+                </div>
+                <div class="sc-button">
+                    <button type="submit" class="sc-btn">
+                            Поиск
+                    </button>
+                </div>
+            </div>
+        </div>
+    </search>
+    <nav>
+        <div class="nav hide">
+            <div class="blue-half    header-d-block d-none">
+                <div class="navbar">
+                    <div class="container">
+                        <div class="navbar-menu-btn">
+                            <div class="menu">
+                                <button onclick="functionMenu()" class="menu-btn ">
+                                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path
+                                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path
+                                                d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                                        </svg>
+                                        На главную
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://212.49.112.158/moodle/course/index.php" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                        </svg>
+                                        Курсы
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="navbar-search">
+                                <form action="" class="ns-wrapper">
+                                    <button type="submit" class="ns-btn">
+                                        <svg class="nav-icon ns-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512">
+                                            <path
+                                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" placeholder="Поиск в ЭИОС" class="ns-form">
+                                </form>
+                            </div>
+                            <ul class="navbar-nav jc-right">
+                                <li class="nav-item">
+                                    <a href="http://212.49.112.158/moodle/my" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                                        </svg>
+                                        Личный кабинет
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://212.49.112.158/moodle/login/index.php" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
+                                        </svg>
+                                        Войти
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+            <div class="blue-half    header-d-block d-none">
+                <div class="navbar">
+                    <div class="container">
+                        <div class="navbar-menu-btn">
+                            <div class="menu">
+                                <button onclick="functionMenu()" class="menu-btn">
+                                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path
+                                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path
+                                                d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                                        </svg>
+                                        На главную
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://212.49.112.158/moodle/course/index.php" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                        </svg>
+                                        Курсы
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="navbar-search">
+                                <form action="" class="ns-wrapper">
+                                    <button type="submit" class="ns-btn">
+                                        <svg class="nav-icon ns-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512">
+                                            <path
+                                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" placeholder="Поиск в ЭИОС" class="ns-form">
+                                </form>
+                            </div>
+                            <ul class="navbar-nav jc-right">
+                                <li class="nav-item">
+                                    <a href="http://212.49.112.158/moodle/my" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                                        </svg>
+                                        Личный кабинет
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://212.49.112.158/moodle/login/index.php" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
+                                        </svg>
+                                        Войти
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blue-half    header-d-none">
+                <div class="navbar">
+                    <div class="container">
+                        <div class="navbar-wrapper">
+                            <div class="navbar-menu-btn">
+                                <div class="menu">
+                                    <button onclick="functionMenu()" class="menu-btn"><svg class="menu-icon"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                            <div class="navbar-logo">
+                                <a href="#" class="navbar-logo-txt">ЭИОС</a>
+                            </div>
+                            <div class="navbar-search-btn">
+                                <div class="search">
+                                    <button onclick="functionSearch()" class="search-btn">
+                                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512">
+                                            <path
+                                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path
+                                                d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <hr />
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blue-half    header-d-block d-none">
+                <div class="header-logo">
+                    <div class="container">
+                        <div class="hl-wrapper">
+                            <div class="hl-text">
+                                <div class="hl-title">
+                                    ЭИОС
+                                </div>
+                                <div class="hl-subtitle">
+                                    Электронная информационно-образовательная среда Уральского юридического института
+                                    МВД
+                                    России
+                                </div>
+                            </div>
+                            <div class="hl-logo">
+                                <img src="./img/logo.png" alt="logo" class="hl-logo-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="banner">
+                <div class="container jc-center">
+                    <div class="banner-wrapper">
+                        <div class="banner-item size-1k6"> <!-- ОСНОВНЫЕ ПРОФЕССИОНАЛЬНЫЕ ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ -->
+                            <div class="banner-btn bg-yruimvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=2344"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ОСНОВНЫЕ ПРОФЕССИОНАЛЬНЫЕ ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!-- ОЧНАЯ ФОРМА ОБУЧЕНИЯ -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=2"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ОЧНАЯ ФОРМА ОБУЧЕНИЯ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!-- ЗАОЧНАЯ ФОРМА ОБУЧЕНИЯ -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=3"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ЗАОЧНАЯ ФОРМА ОБУЧЕНИЯ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!-- ПОВЫШЕНИЕ КВАЛИФИКАЦИИ -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/mod/page/view.php?id=36&forceview=1"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ПОВЫШЕНИЕ КВАЛИФИКАЦИИ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!-- ПРОФЕССИОНАЛЬНОЕ ОБУЧЕНИЕ -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/mod/page/view.php?id=2010" class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ПРОФЕССИОНАЛЬНОЕ ОБУЧЕНИЕ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k6"> <!-- ПРОФЕССИОНАЛЬНАЯ СЛУЖЕБНАЯ И ФИЗИЧЕСКАЯ ПОДГОТОВКА -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=1970"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ПРОФЕССИОНАЛЬНАЯ СЛУЖЕБНАЯ И ФИЗИЧЕСКАЯ ПОДГОТОВКА</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k6"> <!-- МОРАЛЬНО-ПСИХОЛОГИЧЕСКАЯ ПОДГОТОВКА -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=2006"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">МОРАЛЬНО-ПСИХОЛОГИЧЕСКАЯ ПОДГОТОВКА</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k6">
+                            <!-- МОДУЛЬ СЕТЕВОГО ВЗАИМОДЕЙСТВИЯ ЛИНГВИСТИЧЕСКИХ КАФЕДР ОБРАЗОВАТЕЛЬНЫХ ОРГАНИЗАЦИЙ МВД РОССИИ -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=2366"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">МОДУЛЬ СЕТЕВОГО ВЗАИМОДЕЙСТВИЯ ЛИНГВИСТИЧЕСКИХ КАФЕДР
+                                        ОБРАЗОВАТЕЛЬНЫХ ОРГАНИЗАЦИЙ МВД РОССИИ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!-- АДЪЮНКТУРА -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=678"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">АДЪЮНКТУРА</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!-- КАНДИДАТАМ НА ОБУЧЕНИЕ -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=2007"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">КАНДИДАТАМ НА ОБУЧЕНИЕ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k6"> <!-- ВСТРЕЧА РУКОВОДСТВА ИНСТИТУТА С ПЕРЕМЕННЫМ СОСТАВОМ -->
+                            <div class="banner-btn bg-yruimvd">
+                                <a href="http://212.49.112.158/moodle/course/view.php?id=4054" class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ВСТРЕЧА РУКОВОДСТВА ИНСТИТУТА С ПЕРЕМЕННЫМ СОСТАВОМ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k6">
+                            <!-- ВСТРЕЧА РУКОВОДСТВА ИНСТИТУТА С РОДИТЕЛЯМИ (ЗАКОННЫМИ ПРЕДСТАВИТЕЛЯМИ) ОБУЧАЮЩИХСЯ -->
+                            <div class="banner-btn bg-yruimvd">
+                                <a href="http://212.49.112.158/moodle/course/view.php?id=4672" class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ВСТРЕЧА РУКОВОДСТВА ИНСТИТУТА С РОДИТЕЛЯМИ (ЗАКОННЫМИ
+                                        ПРЕДСТАВИТЕЛЯМИ) ОБУЧАЮЩИХСЯ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k6">
+                            <!-- МЕЖДУНАРОДНЫЙ КОНКУРС НИР КУРСАНТОВ, СЛУШАТЕЛЕЙ И СТУДЕНТОВ "ДЕЯТЕЛЬНОСТЬ ПОДРАЗДЕЛЕНИЙ ДОЗНАНИЯ" -->
+                            <div class="banner-btn bg-yruimvd">
+                                <a href="http://212.49.112.158/moodle/course/view.php?id=5789" class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">МЕЖДУНАРОДНЫЙ КОНКУРС НИР КУРСАНТОВ, СЛУШАТЕЛЕЙ И СТУДЕНТОВ
+                                        "ДЕЯТЕЛЬНОСТЬ ПОДРАЗДЕЛЕНИЙ ДОЗНАНИЯ"</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!-- ОЦЕНКА КАЧЕСТВА ОБРАЗОВАТЕЛЬНОЙ ДЕЯТЕЛЬНОСТИ -->
+                            <div class="banner-btn bg-yruimvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=2251"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ОЦЕНКА КАЧЕСТВА ОБРАЗОВАТЕЛЬНОЙ ДЕЯТЕЛЬНОСТИ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!-- ГОЛОСОВАНИЕ -->
+                            <div class="banner-btn bg-yruimvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=2026"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text">ГОЛОСОВАНИЕ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!--  ЭЛЕКТРОННЫЕ ИНФОРМАЦИОННЫЕ РЕСУРСЫ -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=11"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text"> ЭЛЕКТРОННЫЕ ИНФОРМАЦИОННЫЕ РЕСУРСЫ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-item size-1k3"> <!--  ЭЛЕКТРОННЫЕ ОБРАЗОВАТЕЛЬНЫЕ РЕСУРСЫ -->
+                            <div class="banner-btn bg-mvd">
+                                <a href="http://212.49.112.158/moodle/course/index.php?categoryid=12"
+                                    class="banner-link">
+                                    <div class="banner-logo logo-yruimvd"><img src="./img/logo.png" alt="logo"
+                                            class="banner-logo-img"></div>
+                                    <div class="banner-text"> ЭЛЕКТРОННЫЕ ОБРАЗОВАТЕЛЬНЫЕ РЕСУРСЫ</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="btn-up btn-up_hide"><svg class="btn-up-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+        </svg></div>
+    <script src="./script/menu-btn.js"></script>
+    <script src="./script/search-btn.js"></script>
+    <script src="./script/scroll-header.js"></script>
+    <script src="./script/up.js"></script>
+</body>
+
+</html>

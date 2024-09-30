@@ -1,0 +1,110 @@
+
+/* ---< Меню >--- */
+
+.sc-header {
+    background: url(../img/header.jpg);
+    background-size: 100vw;
+}
+
+.search-content {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    
+    transition: all 1s ;
+    background: url(../img/background.jpg);
+    background-size: cover;
+}
+
+/* Ссылки внутри выпадающего списка */
+
+
+.sc-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.sc-search {
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem 2vw;
+    text-decoration: none;
+    display: block;
+    background: var(--color-blue-075);
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+}
+.sc-button {
+    background: var(--color-blue-075);
+    margin: 1rem;
+}
+.sc-btn {
+    width: 6rem;
+    padding: 1rem 2vw;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+}
+.sc-button:hover {
+    background: var(--color-blue-05);
+}
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.search-content a:hover {
+    background-color: var(--color-lblue-075);
+}
+.sc-text {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue-05);
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+}
+.sc-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    top: 0;
+    right: 2vw;
+    height: 50px;
+}
+
+
+
+
+/* ------< Поиск >------ */ /*#region*/
+
+/* ---< Рамка >--- */
+
+/* ---< Отступы> --- */
+.sc-wrapper {
+    height: 100%;
+    padding: 0 0.25rem;
+    display: flex;
+    align-items: center;
+}
+/* ---< Поле ввода >--- */
+.sc-form {
+    background: none;
+    height: 100%;
+    width: 100%;
+    padding-left: 0.25rem;
+}
