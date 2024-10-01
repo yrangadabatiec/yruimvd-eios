@@ -27,14 +27,19 @@ const btnUp = {
         return;
       }
       this.scrolling = false;
-      // если пользователь прокрутил страницу более чем на 200px
-      if (scrollY > 400) {
-        // сделаем кнопку .btn-up видимой
-        this.show();
-      } else {
-        // иначе скроем кнопку .btn-up
+          // иначе скроем кнопку .btn-up
+      if (document.documentElement.clientWidth < 786) {
         this.hide();
-      }
+      } else {
+        // если пользователь прокрутил страницу более чем на 200px
+        if (scrollY > 400) {
+          // сделаем кнопку .btn-up видимой
+          this.show();
+        } else {
+          // иначе скроем кнопку .btn-up
+          this.hide();
+        }
+      };
     });
     // при нажатии на кнопку .btn-up
     document.querySelector('.btn-up').onclick = () => {
