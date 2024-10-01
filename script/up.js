@@ -28,7 +28,7 @@ const btnUp = {
       }
       this.scrolling = false;
           // иначе скроем кнопку .btn-up
-      if (document.documentElement.clientWidth < 786) {
+      if (document.documentElement.clientWidth < 800) {
         this.hide();
       } else {
         // если пользователь прокрутил страницу более чем на 200px
